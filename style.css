@@ -58,6 +58,7 @@ textarea {
     border-radius: 5px;
     transition: 0.3s;
     font-size: 1rem;
+    box-sizing: border-box;
 }
 
 /* Effet focus */
