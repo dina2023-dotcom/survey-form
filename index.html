@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8"/>
+    <title>Formulaire d'enquête freeCodeCamp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="title">User Experience Survey</h1>
+    <p id="description"><em>We would love to hear your thoughts about your experience with our platform. Your feedback helps us improve.</em></p>
+    <form id="survey-form">
+        <label for="name" id="name-label">Name <br>
+            <input type="text" placeholder="Enter your name" id="name" required />
+        </label>
+        
+        <label for="email" id="email-label">Email<br>
+            <input type="email" placeholder="Enter your Email" id="email" required/><br>
+        </label>
+
+        <label for="number" id="number-label">Age (optional)<br>
+            <input type="number" id="number" min="10" max="99" placeholder="Age"/>
+        </label>
+        <label for="country">Country / Region</label>
+    <input type="text" id="country" name="country" placeholder="Enter your country">
+
+<br>
+              <label for="satisfaction">How satisfied are you with our platform?</label>
+      <select id="satisfaction" name="satisfaction">
+        <option value="">Select an option</option>
+        <option>Very satisfied</option>
+        <option>Satisfied</option>
+        <option>Neutral</option>
+        <option>Dissatisfied</option>
+        <option>Very dissatisfied</option>
+      </select>
+<br>
+      <label>How easy was it to navigate the platform?</label>
+      <div>
+        <input type="radio" name="navigation" value="very-easy"> Very easy <br>
+        <input type="radio" name="navigation" value="easy"> Easy <br>
+        <input type="radio" name="navigation" value="neutral"> Neutral <br>
+        <input type="radio" name="navigation" value="difficult"> Difficult <br>
+        <input type="radio" name="navigation" value="very-difficult"> Very difficult
+      </div>
+<br>
+              <label>Would you recommend this platform to a friend?</label>
+      <div>
+        <input type="radio" name="recommend" value="yes"> Yes, definitely <br>
+        <input type="radio" name="recommend" value="maybe"> Maybe <br>
+        <input type="radio" name="recommend" value="no"> No
+      </div>
+<br>
+            <label for="comments">Do you have any additional comments or suggestions?</label>
+      <textarea id="comments" name="comments" placeholder="Enter your comments here..."></textarea>
+
+                                
+        <input type="submit" id="submit" value="Submit"/>
+    </form>
+</body>
+</html>
