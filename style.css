@@ -95,12 +95,24 @@ input[type="submit"]:hover {
 }
 
 /* Responsive design */
+
 @media (max-width: 480px) {
     #survey-form {
-        padding: 20px;
+        width: 95%;  /* le formulaire prend presque toute la largeur */
+        padding: 15px; /* moins de padding pour ne pas tasser */
     }
 
     #title {
-        font-size: 1.5rem;
+        font-size: 1.3rem; /* texte plus adapté */
+    }
+
+    #description {
+        font-size: 0.9rem;
+    }
+
+    input[type="submit"] {
+        width: 100%; /* bouton large, facile à cliquer sur téléphone */
+        padding: 14px;
     }
 }
+
