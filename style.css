@@ -9,7 +9,6 @@ body {
     padding: 20px;
 }
 
-
 /* Titre principal */
 #title {
     text-align: center;
@@ -40,7 +39,7 @@ body {
 /* Labels */
 label {
     display: block;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
     font-weight: 600;
     color: #333;
 }
@@ -53,12 +52,12 @@ select,
 textarea {
     width: 100%;
     padding: 12px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     border: 1px solid #ddd;
     border-radius: 5px;
     transition: 0.3s;
     font-size: 1rem;
-    box-sizing: border-box;
+    box-sizing: border-box; /* empêche les débordements */
 }
 
 /* Effet focus */
@@ -78,7 +77,7 @@ input[type="checkbox"] {
 
 /* Bouton de soumission */
 input[type="submit"] {
-    background: #28a745;
+    background: #4a90e2;
     color: #fff;
     padding: 12px 18px;
     border: none;
@@ -87,33 +86,33 @@ input[type="submit"] {
     font-weight: bold;
     cursor: pointer;
     transition: 0.3s;
+    width: 100%; /* bouton large par défaut */
 }
 
 input[type="submit"]:hover {
-    background: #218838;
+    background: #0d4b8a;
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
 /* Responsive design */
-
 @media (max-width: 480px) {
     #survey-form {
-        width: 95%;  /* le formulaire prend presque toute la largeur */
-        padding: 15px; /* moins de padding pour ne pas tasser */
+        width: 95%;  /* le formulaire occupe presque tout l’écran */
+        padding: 15px; 
     }
 
     #title {
-        font-size: 1.3rem; /* texte plus adapté */
+        font-size: 1.4rem;
     }
 
-    #description {
+    #description { 
         font-size: 0.9rem;
     }
 
-    input[type="submit"] {
-        width: 100%; /* bouton large, facile à cliquer sur téléphone */
-        padding: 14px;
+    input,
+    select,
+    textarea {
+        font-size: 0.9rem;
     }
 }
-
