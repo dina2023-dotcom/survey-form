@@ -98,8 +98,10 @@ input[type="submit"]:hover {
 /* Responsive design */
 @media (max-width: 480px) {
     #survey-form {
-        width: 95%;  /* le formulaire occupe presque tout l’écran */
+       
         padding: 15px; 
+        width: 100%;     /* prend 100% de l’espace */
+        margin: 0 auto;
     }
 
     #title {
