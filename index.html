@@ -10,20 +10,20 @@
 <body>
     <h1 id="title">User Experience Survey</h1>
     <p id="description"><em>We would love to hear your thoughts about your experience with our platform. Your feedback helps us improve.</em></p>
-    <form id="survey-form">
+   <form id="survey-form" action="https://formspree.io/f/mzzaoljz" method="POST">
         <label for="name" id="name-label">Name <br>
-            <input type="text" placeholder="Enter your name" id="name" required />
+            <input type="text" placeholder="Enter your name" id="name"  name="name" required />
         </label>
         
         <label for="email" id="email-label">Email<br>
-            <input type="email" placeholder="Enter your Email" id="email" required/><br>
+            <input type="email" placeholder="Enter your Email" id="email" name="email" required/><br>
         </label>
 
-        <label for="number" id="number-label">Age (optional)<br>
-            <input type="number" id="number" min="10" max="99" placeholder="Age"/>
+        <label for="number" id="number-label"  >Age (optional)<br>
+            <input type="number" id="number" min="10" max="99" placeholder="Age"  name="age"/>
         </label>
         <label for="country">Country / Region</label>
-    <input type="text" id="country" name="country" placeholder="Enter your country">
+    <input type="text" id="country" name="country" placeholder="Enter your country" />
 
 <br>
               <label for="satisfaction">How satisfied are you with our platform?</label>
