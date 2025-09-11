@@ -29,11 +29,13 @@ body {
 /* Formulaire */
 #survey-form {
     max-width: 600px;
-    margin: 0 auto;
+    width: 100%;          /* prend toute la largeur dispo */
+    margin: 0 auto;       /* centre horizontalement */
     background: #fff;
     padding: 30px;
     border-radius: 12px;
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box; /* évite les débordements */
 }
 
 /* Labels */
